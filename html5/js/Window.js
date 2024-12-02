@@ -972,7 +972,7 @@ class XpraWindow {
     let y = this.y;
     this.debug("geometry", "recenter() x=", x, ", y=", y, ", desktop size: ", this.client.desktop_width, this.client.desktop_height);
     x = Math.round((this.client.desktop_width - this.w) / 2);
-    y = Math.round((this.client.desktop_height - this.h) / 2);
+    y = Math.round((this.client.desktop_height - this.h) / 2 + 2.25);
     if (this.x != x || this.y != y || force_update_geometry) {
       this.debug("geometry", "window re-centered to:", x, y);
       this.x = x;
